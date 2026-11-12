@@ -1,0 +1,22 @@
+{
+  "name": "medidor-uwb-android",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Android app (Capacitor) for the UWB distance meter. The UI is the web app in ../data.",
+  "scripts": {
+    "web": "node scripts/copy-web.mjs",
+    "cap:sync": "npm run web && npx cap sync android",
+    "cap:open": "npx cap open android",
+    "android:build": "npm run cap:sync && cd android && gradlew.bat assembleDebug",
+    "android:install": "adb install -r android/app/build/outputs/apk/debug/app-debug.apk"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.6.8"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.6.8",
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.6.8"
+  }
+}

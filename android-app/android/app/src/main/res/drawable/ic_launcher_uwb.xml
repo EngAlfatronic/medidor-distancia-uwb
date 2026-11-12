@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon foreground: a yellow tape measure with an orange reading marker.
+     108dp canvas; everything important stays inside the centered 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- tape -->
+    <path android:fillColor="#F5B81F" android:pathData="M22,44h64v22h-64z" />
+
+    <!-- ticks -->
+    <path android:fillColor="#1A1508" android:pathData="M27,44h2.4v12h-2.4z" />
+    <path android:fillColor="#1A1508" android:pathData="M34,44h1.6v6h-1.6z" />
+    <path android:fillColor="#1A1508" android:pathData="M40,44h1.6v8h-1.6z" />
+    <path android:fillColor="#1A1508" android:pathData="M46,44h1.6v6h-1.6z" />
+    <path android:fillColor="#1A1508" android:pathData="M60.4,44h1.6v6h-1.6z" />
+    <path android:fillColor="#1A1508" android:pathData="M66.4,44h1.6v8h-1.6z" />
+    <path android:fillColor="#1A1508" android:pathData="M72.4,44h1.6v6h-1.6z" />
+    <path android:fillColor="#1A1508" android:pathData="M78.6,44h2.4v12h-2.4z" />
+
+    <!-- reading marker -->
+    <path android:fillColor="#FF5A1F" android:pathData="M52.5,38h3v32h-3z" />
+    <path android:fillColor="#FF5A1F" android:pathData="M47,34h14l-7,9z" />
+</vector>

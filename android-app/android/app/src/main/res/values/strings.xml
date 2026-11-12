@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Medidor UWB</string>
+    <string name="title_activity_main">Medidor UWB</string>
+    <string name="package_name">com.medidor.uwb</string>
+    <string name="custom_url_scheme">com.medidor.uwb</string>
+</resources>

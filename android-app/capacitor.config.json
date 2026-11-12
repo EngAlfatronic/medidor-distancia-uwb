@@ -1,0 +1,8 @@
+{
+  "appId": "com.medidor.uwb",
+  "appName": "Medidor UWB",
+  "webDir": "www",
+  "android": {
+    "adjustMarginsForEdgeToEdge": "auto"
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#14110d">
+  <title>Medidor UWB</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="medidor.css">
+</head>
+<body>
+  <main class="unit">
+    <header class="top">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <h1>Medidor UWB</h1>
+          <p class="sub" id="sub">DW3000 · DS-TWR · canal 5</p>
+        </div>
+      </div>
+      <div class="link" id="link" data-state="wait">
+        <span class="led" aria-hidden="true"></span>
+        <span id="linkText">conectando</span>
+      </div>
+    </header>
+
+    <section class="readout" aria-live="polite">
+      <div class="readout-label">
+        <span>distância · combinada</span>
+        <span class="tare" id="tareTag" hidden></span>
+      </div>
+      <div class="value">
+        <span id="value">--.--</span><span class="unit-tag" id="unitTag">m</span>
+      </div>
+      <canvas id="tape" class="tape" aria-hidden="true"></canvas>
+    </section>
+
+    <section class="compare" aria-label="Comparação entre as placas">
+      <div class="stat"><span class="k">placa A · initiator</span><span class="v" id="cA">--</span></div>
+      <div class="stat"><span class="k">placa B · responder</span><span class="v" id="cB">--</span></div>
+      <div class="stat"><span class="k">diferença A − B</span><span class="v" id="cDiff">--</span></div>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><span class="k">instantâneo</span><span class="v" id="sRaw">--</span></div>
+      <div class="stat"><span class="k">mínimo</span><span class="v" id="sMin">--</span></div>
+      <div class="stat"><span class="k">máximo</span><span class="v" id="sMax">--</span></div>
+      <div class="stat"><span class="k">taxa</span><span class="v" id="sRate">--</span></div>
+      <div class="stat"><span class="k">falhas</span><span class="v" id="sFail">--</span></div>
+    </section>
+
+    <section class="history">
+      <div class="history-head">
+        <span>histórico</span>
+        <span id="histRange" class="dim"></span>
+      </div>
+      <canvas id="chart" class="chart" aria-label="Histórico de distância"></canvas>
+    </section>
+
+    <footer class="controls">
+      <button id="btnTare" type="button">Zerar aqui</button>
+      <button id="btnUnit" type="button">Unidade: m</button>
+      <button id="btnSerial" type="button" class="ghost">Serial USB</button>
+      <button id="btnClear" type="button" class="ghost">Limpar</button>
+    </footer>
+    <p class="hint" id="hint" hidden></p>
+  </main>
+
+  <script src="medidor.js"></script>
+</body>
+</html>

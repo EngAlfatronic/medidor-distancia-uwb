@@ -1,0 +1,17 @@
+{
+  "name": "Medidor UWB",
+  "short_name": "Medidor UWB",
+  "description": "Medidor de distância com duas placas ESP32 + DW3000 (UWB), lido por USB serial ou Wi-Fi.",
+  "lang": "pt-BR",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#14110d",
+  "theme_color": "#14110d",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
